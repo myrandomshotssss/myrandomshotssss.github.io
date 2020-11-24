@@ -1,0 +1,117 @@
+.tab{
+	margin-left: 4px;
+}
+
+
+#title{	
+	font-family: 'Poiret One', cursive;
+	font-size: 30px;
+	color: #514F4F;
+	line-height: 40pt;
+}
+
+#text_cont{
+  margin: 30px;
+
+}
+
+#content_cont{
+	color: #7F7B7B;
+	font-family: 'Chathura';
+	font-size: 30px;
+	line-height: 15pt;
+}
+
+#content{
+	display: inline-block;
+}
+
+#contact_logo{
+  
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  padding: 100px;
+  overflow: hidden;
+  vertical-align: top;
+  height: 100%;
+  z-index: 1;
+  background: url('../img/final2.png') center center no-repeat;
+  background-size: 500px 300px;
+  opacity: 0.6;
+  
+}
+
+.grid_wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-rows: 280px;
+  grid-gap: 10px;
+  position: relative;
+  overflow: auto;
+  margin-left: 4px;
+  margin-right: 50px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.grid_cont{
+  height: auto;
+  width: 280px;
+/* background-size: 280px 280px;*/
+  overflow: auto;
+  position: relative;
+	color: #7F7B7B;
+	font-family: 'Chathura';
+	font-size: 30px;
+	line-height: 15pt;
+}
+
+#square0{
+	
+
+}
+
+ #square0_cont{
+  width: 100%;
+  display: block;
+  overflow: auto;
+  position: relative;
+  display: flex;
+  z-index: 0;
+ margin: auto;
+
+ }
+
+
+ #square1_cont{
+  width: 100%;
+  display: inline-block;
+  overflow: auto;
+  position: relative;
+  display: flex;
+  z-index: 0;
+ }
+
+
+
+#square1:hover .square_text{
+  color: black;
+}
+
+
+.grid_opacity{
+  opacity: 1;
+  position: absolute;
+  margin-top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-image: url("../img/final2.png") ;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+
+ 
+
+}

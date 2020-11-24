@@ -1,0 +1,269 @@
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+}
+
+#html{
+  background-color: #ECEFF1;
+}
+
+#content{
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  
+}
+
+ul {
+  display: inline-block;
+  float: left;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  /*background-color: rgb(0, 0, 0);*/
+  width: 100%;
+  /*opacity: 0.7;*/
+  text-align: center;
+  height: 44px;
+}
+
+li {
+  display: flex;
+  float: left;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+li a{
+  z-index: 1;
+  display: flex;
+  float: left;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+.opacity{
+/*  opacity: 0.6;*/
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+/*  background-color: rgb(0, 0, 0);*/
+  overflow: hidden;
+}
+
+#banner_wrapper{ 
+  padding: 0px;
+  margin: 0px;
+  height: 350px;
+  background-image: url("../img/Banner/20190128_103517533_iOS.jpg");
+  /*opacity: 0.8;*/
+  width: 100%;
+  background-size: cover;
+  display: block;
+  position: relative;
+  background-repeat: no-repeat fixed;
+  overflow: hidden;
+}
+
+
+#banner_cont_wrap{
+  display: block;
+ 
+  width: 100%;
+  height: 306px;
+  /*height: 100%;*/
+}
+
+#banner_logo{
+  
+  display: inline-block;
+  width: 100%;
+  
+  overflow: hidden;
+  vertical-align: top;
+  height: 100%;
+  z-index: 1;
+  background: url('../img/final2_white.png') center center no-repeat;
+  background-size: 500px 300px;
+  opacity: 0.6;
+  
+}
+
+
+
+
+.list_text{
+  display: inline-block;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  font-family: 'Poiret One', cursive;
+  font-size: 18px;
+  margin: auto; 
+  text-align: center;
+  color: rgba(256, 256, 256, 1);
+  opacity: 1;
+}
+
+.sticky li a:hover {
+  /*background-color: rgba(78, 78, 78, 0.8);*/
+ /* background-color: #0F3654;*/
+  position: relative;
+  background-color: rgba(15, 54, 84, 0.6);
+  z-index: 100;
+}
+
+#ig {
+  display: inline-block;
+  float: right;
+  width: 35px;
+  height: 35px;
+  padding: 6px;
+  position: relative;
+  margin-right: 5px;
+}
+
+#ig:hover{
+  opacity: 0.6;
+}
+
+.fa-instagram {
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+
+#nav_bar_center_wrapper{
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+}
+
+.sticky {
+  margin: 0;
+  display: block;
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  width: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  -webkit-transform: translate3d(0,0,1px);
+  overflow: hidden;
+}
+
+.sticky .opacity{
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.sticky + #content {
+  padding-top: 102px;
+}
+
+
+.stick{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 1;
+   -webkit-transform: translate3d(0,0,1px);
+   overflow: hidden;
+
+}
+
+.stick li a:hover{
+
+    opacity: 0.7;
+
+}
+
+.footer_cont{
+  height: 100px;
+  background-color: black;
+}
+
+hr{
+    display: inline-block;
+    margin: auto;
+    width: 200px;
+    position: relative;
+    border-color: red;
+}
+
+
+@media screen and (max-width: 700px) {
+  #nav_bar_wrapper {
+    position: relative;
+    min-height: 40px;
+        color: #FF5733;
+  } 
+  #nav_bar_wrapper ul {
+    width: 180px;
+    padding: 5px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid 1px #aaa;
+    background: url(images/icon-menu.png) no-repeat 10px 11px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+        color: #FF5733;
+  }
+  #nav_bar_wrapper li{
+    display: none; /* hide all <li> items */
+    margin: 0;
+  }
+  #nav_bar_wrapper .current {
+    display: block; /* show only current <li> item */
+  }
+  #nav_bar_wrapper a {
+    display: block;
+    padding: 5px 5px 5px 32px;
+    text-align: left;
+  }
+  #nav_bar_wrapper .current a {
+    background: none;
+    color: #FF5733;
+  }
+
+  /* on nav hover */
+  #nav_bar_wrapper ul:hover {
+    background-image: none;
+  }
+  #nav_bar_wrapper ul:hover li {
+    display: block;
+    margin: 0 0 5px;
+  }
+  #nav_bar_wrapper ul:hover .current {
+    background: url(images/icon-check.png) no-repeat 10px 7px;
+  }
+
+  /* right nav */
+  #nav_bar_wrapper.right ul {
+    left: auto;
+    right: 0;
+  }
+
+  /* center nav 
+  .nav.center ul {
+    left: 50%;
+    margin-left: -90px;
+  }
+*/  
+}
+
+

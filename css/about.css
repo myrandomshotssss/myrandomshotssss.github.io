@@ -1,0 +1,23 @@
+.tab{
+	margin-left: 4px;
+}
+
+
+#title{	
+	font-family: 'Assistant', sans-serif;
+	font-size: 30px;
+	color: #514F4F;
+	line-height: 40pt;
+}
+
+#text_cont{
+  margin: 30px;
+
+}
+
+#content_cont{
+	color: #7F7B7B;
+	font-family: 'Chathura';
+	font-size: 30px;
+	line-height: 15pt;
+}
